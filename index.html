@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css"
 </head>
 <body>
-    <h1>Cash ME If You Can</h1>
+   <header class="header">
+        <h1 class="title">$ Cash Me If You Can $</h1>
+        <h2 class="subtitle">Currency Converter</h2>
+        <h4 class="sub-intro">Turn Your Dollars into Doughnuts and Your Euros into Elephants!</h4>
+   </header>
+   
+
+<main>
+
+    <div class="grid-container">
+     
+        <div class="column">
+        <div class="currency-container">
+          <label for="base-currency">Base Currency:</label>
+          <select id="base-currency">
+            <option class="base-option"></option>
+          </select>
+        </div>
+        <input type="text" class="result-box" id="base-input">
+      </div>
+  
+      <div class="equals-container">
+        <p> = </p>
+      </div>
+  
+      <div class="column">
+        <div class="currency-container">
+          <label for="target-currency">Target Currency:</label>
+          <select id="target-currency">
+            <option class="target-option"></option>
+          </select>
+        </div>
+        <input type="text" class="result-box" id="target-output">
+      </div>
+    
+    </div>
+  
+  </main>
+  
+
+
+
 </body>
 </html>
