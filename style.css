@@ -1,8 +1,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(32, 32, 212);
-    color: white;
+    
     
 }
 
@@ -45,10 +44,7 @@ body{
     margin: 0 20px;
   }
   
-  .result-box {
-    margin-top: 10px;
-  }
-
+  
   label{
     font-size: 40px;
     margin-bottom: 20px;
@@ -64,14 +60,15 @@ body{
 
   #base-currency,
   #target-currency{
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 250px;
     margin-bottom: 50px;
   }
 
   .result-box{
     height: 30px;
     width: 200px;
+    margin-top: 10px;
   }
 
 

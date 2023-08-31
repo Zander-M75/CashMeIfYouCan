@@ -1,9 +1,14 @@
-import FetchWrapper from "./fetch-wrapper";
+import FetchWrapper from "./fetch-wrapper.js";
 
-const key = "4d46a45b4a63af8d1fe2edf8"
+const key = "4d46a45b4a63af8d1fe2edf8";
+const endpoint = "/latest/USD"; //USD as example for now
 
-const exchangeAPI = fetch(`https://v6.exchangerate-api.com/v6/${key}`)
+const exchangeAPI = new FetchWrapper(`https://v6.exchangerate-api.com/v6/${key}`)
 
-const endpoint = "/latest/USD" //USD as example for now
+
+exchangeAPI.get(endpoint)
+.then(data => {
+    console.log(data)
+})
 
 
