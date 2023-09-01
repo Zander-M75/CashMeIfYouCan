@@ -1,85 +1,81 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(130, 132, 239);
-
-    margin-top: 50px;
-    margin-bottom: 65px;
-
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-    
+/* Header Styling with Shadow */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.title {
+    margin: 0;
+    font-size: 2.5rem;
+}
 
+.subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+}
 
+.sub-intro {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
 
 .grid-container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: center;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .currency-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .equals-container {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-  }
-  
-  
-  label{
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-
-  .equals-container{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: -100px;
-    padding-top: 250px;
-    font-size: 40px;
-  }
-
-  #base-currency,
-  #target-currency{
-    height: 40px;
-    width: 250px;
-    margin-bottom: 50px;
-  }
-
-.results-display{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   font-size: 50px;
-   
 }
 
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 150px;
+}
 
+.currency-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
+.currency-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 50px;
+}
 
+/* Results Display */
+.results-display {
+    margin-top: 20px; /* Closer to the main grid */
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;  /* Adjusted to bring elements closer */
+    text-align: center;
+    font-size: 2rem;
+}
 
-
-  
-
-  
+#equals {
+    font-size: 2.5rem;
+}
